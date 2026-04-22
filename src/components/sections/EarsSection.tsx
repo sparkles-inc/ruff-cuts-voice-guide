@@ -40,7 +40,7 @@ export default function EarsSection({ printMode }: { printMode?: boolean }) {
 
   return (
     <div className="space-y-10">
-      <p className="text-sm text-rc-bark/80 leading-relaxed">
+      <p className="text-lg text-rc-bark leading-relaxed">
         Our clients won&apos;t remember the exact incident, but they&apos;ll remember how we made them feel. Pick up the phone whenever you can. Hard conversations don&apos;t do nearly as well over text.
       </p>
 
@@ -52,14 +52,14 @@ export default function EarsSection({ printMode }: { printMode?: boolean }) {
                   onClick={() => setExpanded(expanded === i ? null : i)}
                   className="w-full text-left px-5 py-4 flex items-center justify-between hover:bg-rc-fog/20 transition-colors"
                 >
-                  <span className="text-sm font-semibold text-rc-bark/80">{s.situation}</span>
+                  <span className="text-lg font-semibold text-rc-bark">{s.situation}</span>
                   <span className="text-xs text-rc-warm/40">{expanded === i ? "▾" : "▸"}</span>
                 </button>
               )}
 
               {printMode && (
                 <div className="px-5 pt-4 pb-1">
-                  <p className="text-sm font-semibold text-rc-bark/80">{s.situation}</p>
+                  <p className="text-base font-semibold text-rc-bark">{s.situation}</p>
                 </div>
               )}
 
@@ -67,50 +67,50 @@ export default function EarsSection({ printMode }: { printMode?: boolean }) {
                 <div className="px-5 pb-5 space-y-4">
                   {/* What the client says */}
                   <div>
-                    <p className="text-[10px] uppercase tracking-wider text-rc-warm/40 mb-1.5">They say</p>
+                    <p className="text-xs uppercase tracking-wider text-rc-warm/70 mb-1.5">They say</p>
                     <div className="bg-rc-fog/30 rounded-xl px-4 py-3">
-                      <p className="text-sm text-rc-bark/70 italic leading-relaxed">&quot;{s.clientSays}&quot;</p>
+                      <p className="text-lg text-rc-bark/90 italic leading-relaxed">&quot;{s.clientSays}&quot;</p>
                     </div>
                   </div>
 
                   {"approach" in s ? (
                     /* Non-complaint scenarios — single response */
                     <div>
-                      <p className="text-[10px] uppercase tracking-wider text-rc-sage mb-1.5">Our response</p>
+                      <p className="text-xs uppercase tracking-wider text-rc-sage mb-1.5">Our response</p>
                       <div className="bg-rc-cream rounded-xl px-4 py-3 border-l-2 border-rc-sage/40">
-                        <p className="text-sm text-rc-bark/80 leading-relaxed whitespace-pre-line">&quot;{("response" in s) ? s.response : ""}&quot;</p>
+                        <p className="text-lg text-rc-bark leading-relaxed whitespace-pre-line">&quot;{("response" in s) ? s.response : ""}&quot;</p>
                       </div>
                     </div>
                   ) : (
                     /* Complaint scenario — full 3-step framework */
                     <>
                       <div>
-                        <p className="text-[10px] uppercase tracking-wider text-rc-warm mb-1.5">Step 1: Make a safe space</p>
+                        <p className="text-xs uppercase tracking-wider text-rc-warm mb-1.5">Step 1: Make a safe space</p>
                         <div className="bg-rc-cream rounded-xl px-4 py-3 border-l-2 border-rc-warm/40">
-                          <p className="text-sm text-rc-bark/80 leading-relaxed">&quot;{("drawOut" in s) ? s.drawOut : ""}&quot;</p>
+                          <p className="text-lg text-rc-bark leading-relaxed">&quot;{("drawOut" in s) ? s.drawOut : ""}&quot;</p>
                         </div>
                       </div>
 
                       {"clientFollowUp" in s && (
                         <div>
-                          <p className="text-[10px] uppercase tracking-wider text-rc-warm/40 mb-1.5">They continue</p>
+                          <p className="text-xs uppercase tracking-wider text-rc-warm/70 mb-1.5">They continue</p>
                           <div className="bg-rc-fog/30 rounded-xl px-4 py-3">
-                            <p className="text-sm text-rc-bark/70 italic leading-relaxed">&quot;{s.clientFollowUp}&quot;</p>
+                            <p className="text-lg text-rc-bark/90 italic leading-relaxed">&quot;{s.clientFollowUp}&quot;</p>
                           </div>
                         </div>
                       )}
 
                       <div>
-                        <p className="text-[10px] uppercase tracking-wider text-rc-gold mb-1.5">Step 2: Mirror what they say</p>
+                        <p className="text-xs uppercase tracking-wider text-rc-gold mb-1.5">Step 2: Mirror what they say</p>
                         <div className="bg-rc-cream rounded-xl px-4 py-3 border-l-2 border-rc-gold/40">
-                          <p className="text-sm text-rc-bark/80 leading-relaxed">&quot;{("mirrorBack" in s) ? s.mirrorBack : ""}&quot;</p>
+                          <p className="text-lg text-rc-bark leading-relaxed">&quot;{("mirrorBack" in s) ? s.mirrorBack : ""}&quot;</p>
                         </div>
                       </div>
 
                       <div>
-                        <p className="text-[10px] uppercase tracking-wider text-rc-sage mb-1.5">Step 3: Offer solutions</p>
+                        <p className="text-xs uppercase tracking-wider text-rc-sage mb-1.5">Step 3: Offer solutions</p>
                         <div className="bg-rc-cream rounded-xl px-4 py-3 border-l-2 border-rc-sage/40">
-                          <p className="text-sm text-rc-bark/80 leading-relaxed">&quot;{("solve" in s) ? s.solve : ""}&quot;</p>
+                          <p className="text-lg text-rc-bark leading-relaxed">&quot;{("solve" in s) ? s.solve : ""}&quot;</p>
                         </div>
                       </div>
                     </>
@@ -118,8 +118,8 @@ export default function EarsSection({ printMode }: { printMode?: boolean }) {
 
                   {/* Why it works */}
                   <div className="pt-2">
-                    <p className="text-[10px] uppercase tracking-wider text-rc-warm/40 mb-1.5">Why this works</p>
-                    <p className="text-xs text-rc-warm/50 leading-relaxed italic">{s.principle}</p>
+                    <p className="text-xs uppercase tracking-wider text-rc-warm/50 mb-1.5">Why this works</p>
+                    <p className="text-sm text-rc-warm/70 leading-relaxed italic">{s.principle}</p>
                   </div>
                 </div>
               )}

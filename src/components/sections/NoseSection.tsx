@@ -66,16 +66,16 @@ function TypewriterDemo() {
   return (
     <div className="bg-white rounded-2xl border border-rc-fog p-5 mb-8">
       <div className="min-h-[3rem] flex items-center">
-        <p className={`text-sm leading-relaxed transition-colors duration-300 ${
-          isGoodPhase ? "text-rc-sage" : "text-rc-reject/70"
+        <p className={`text-lg leading-relaxed transition-colors duration-300 ${
+          isGoodPhase ? "text-rc-sage" : "text-rc-reject/80"
         }`}>
           {currentText}
           <span className="inline-block w-0.5 h-4 bg-rc-bark/40 ml-0.5 animate-pulse align-middle" />
         </p>
       </div>
       <div className="mt-2 pt-2 border-t border-rc-fog/50">
-        <span className={`text-[10px] font-medium transition-colors duration-300 ${
-          isGoodPhase ? "text-rc-sage" : "text-rc-reject/50"
+        <span className={`text-xs font-medium transition-colors duration-300 ${
+          isGoodPhase ? "text-rc-sage" : "text-rc-reject/60"
         }`}>
           {isGoodPhase ? "✓ On brand" : "✗ Off brand"}
         </span>
@@ -141,19 +141,19 @@ export default function NoseSection({ printMode }: { printMode?: boolean }) {
   if (printMode) {
     return (
       <div className="space-y-8">
-        <p className="text-xs text-rc-warm/50 mb-3">
+        <p className="text-sm text-rc-warm/70 mb-3">
           Examples of off-brand copy rewritten in the Ruff Cuts voice.
         </p>
         {TYPEWRITER_EXAMPLES.map((ex, i) => (
           <div key={i} className="bg-white rounded-2xl border border-rc-fog overflow-hidden">
             <div className="grid grid-cols-1 sm:grid-cols-2">
               <div className="px-5 py-4 sm:border-r border-b sm:border-b-0 border-rc-fog bg-rc-reject/3">
-                <p className="text-[10px] uppercase tracking-wider text-rc-reject/40 mb-2">Before</p>
-                <p className="text-sm text-rc-reject/60 leading-relaxed line-through decoration-rc-reject/20">{ex.bad}</p>
+                <p className="text-xs uppercase tracking-wider text-rc-reject/60 mb-2">Before</p>
+                <p className="text-base text-rc-reject/70 leading-relaxed line-through decoration-rc-reject/20">{ex.bad}</p>
               </div>
               <div className="px-5 py-4 bg-rc-sage/5">
-                <p className="text-[10px] uppercase tracking-wider text-rc-sage mb-2">After</p>
-                <p className="text-sm text-rc-bark/80 leading-relaxed">{ex.good}</p>
+                <p className="text-xs uppercase tracking-wider text-rc-sage mb-2">After</p>
+                <p className="text-base text-rc-bark leading-relaxed">{ex.good}</p>
               </div>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function NoseSection({ printMode }: { printMode?: boolean }) {
 
       {/* Input */}
       <div className="bg-white rounded-2xl border border-rc-fog p-5">
-        <p className="text-xs text-rc-warm/50 mb-3">
+        <p className="text-sm text-rc-warm/70 mb-3">
           Paste any client-facing copy. We&apos;ll flag what&apos;s off-brand and rewrite it.
         </p>
         <textarea
@@ -177,10 +177,10 @@ export default function NoseSection({ printMode }: { printMode?: boolean }) {
           onChange={(e) => { setInput(e.target.value); setResult(null); autoGrow(); }}
           placeholder="e.g. We can't wait to pamper your precious fur baby..."
           rows={2}
-          className="w-full text-sm text-rc-bark/80 placeholder-rc-warm/30 bg-transparent resize-none focus:outline-none leading-relaxed"
+          className="w-full text-lg text-rc-bark placeholder-rc-warm/30 bg-transparent resize-none focus:outline-none leading-relaxed"
         />
         <div className="flex items-center justify-between mt-3 pt-3 border-t border-rc-fog">
-          <span className="text-[10px] text-rc-warm/40">
+          <span className="text-xs text-rc-warm/60">
             {input.length > 0 ? `${input.split(" ").filter(Boolean).length} words` : ""}
           </span>
           <button
@@ -199,10 +199,10 @@ export default function NoseSection({ printMode }: { printMode?: boolean }) {
           {/* Flags */}
           {result.issues && result.issues.length > 0 && (
             <div className="px-5 pt-5 pb-4">
-              <p className="text-[10px] uppercase tracking-wider text-rc-reject/50 mb-3">What the nose caught</p>
+              <p className="text-xs uppercase tracking-wider text-rc-reject/60 mb-3">What the nose caught</p>
               <ul className="space-y-1.5">
                 {result.issues.map((issue, i) => (
-                  <li key={i} className="text-xs text-rc-bark/60 flex items-start gap-2">
+                  <li key={i} className="text-base text-rc-bark/60 flex items-start gap-2">
                     <span className="text-rc-reject mt-0.5">•</span>
                     {issue}
                   </li>
@@ -216,22 +216,22 @@ export default function NoseSection({ printMode }: { printMode?: boolean }) {
             <div className="grid grid-cols-1 sm:grid-cols-2">
               {/* Before */}
               <div className="px-5 py-4 sm:border-r border-b sm:border-b-0 border-rc-fog bg-rc-reject/3">
-                <p className="text-[10px] uppercase tracking-wider text-rc-reject/40 mb-2">Before</p>
-                <p className="text-sm text-rc-reject/60 leading-relaxed line-through decoration-rc-reject/20">{input}</p>
+                <p className="text-xs uppercase tracking-wider text-rc-reject/60 mb-2">Before</p>
+                <p className="text-lg text-rc-reject/70 leading-relaxed line-through decoration-rc-reject/20">{input}</p>
               </div>
 
               {/* After */}
               <div className="px-5 py-4 bg-rc-sage/5">
                 <div className="flex items-center justify-between mb-2">
-                  <p className="text-[10px] uppercase tracking-wider text-rc-sage">After</p>
+                  <p className="text-xs uppercase tracking-wider text-rc-sage">After</p>
                   <button
                     onClick={copyRewrite}
-                    className="text-[10px] text-rc-sage/60 hover:text-rc-sage transition-colors"
+                    className="text-xs text-rc-sage/60 hover:text-rc-sage transition-colors"
                   >
                     {copied ? "Copied!" : "Copy"}
                   </button>
                 </div>
-                <p className="text-sm text-rc-bark/80 leading-relaxed">{result.rewritten}</p>
+                <p className="text-lg text-rc-bark leading-relaxed">{result.rewritten}</p>
               </div>
             </div>
           </div>

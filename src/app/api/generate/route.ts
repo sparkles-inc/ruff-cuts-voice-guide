@@ -17,7 +17,7 @@ TONE: Confident but not cocky. Warm but not gushing. We talk to people, not "pet
 
 CONTEXT: 3 vans, 3 groomers, booked 6 weeks out. $95-$140 per groom. Founded by a vet tech with 15 years experience. We come to the client's house. No kennels, no drop-offs. Customers are mostly dual-income households, 35-55, who have the money but not the time.
 
-FORMAT: Keep it short. No emojis except sparingly on Instagram. No exclamation marks unless genuinely warranted. Write like a competent person texting a friend — not a brand performing enthusiasm.`;
+FORMAT: Keep it short. No emojis except sparingly on Instagram. No exclamation marks unless genuinely warranted. Write like a competent person texting a friend, not a brand performing enthusiasm.`;
 
 const COPY_TYPES: Record<string, string> = {
   "instagram-caption": "Write an Instagram caption for a regular post.",

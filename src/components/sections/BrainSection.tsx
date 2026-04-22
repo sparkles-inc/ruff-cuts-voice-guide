@@ -92,10 +92,10 @@ CHANNEL RULES:INSTAGRAM DMs:
 
 EXAMPLE: what NOT to write vs. what to write:
 ✗ "Hi there! 🐾 Thanks SO much for reaching out! We'd absolutely LOVE to groom your pup! Let me get some details!"
-✓ "Hey — yeah, we groom labs. What part of Austin are you in? I can check our availability for your area."`,
+✓ "Hey, yeah, we groom labs. What part of Austin are you in? I can check our availability for your area."`,
     example: {
       ask: "Someone DMs asking if you groom doodles",
-      output: "We do — we see a lot of them actually. What size is yours? That'll help me give you an accurate quote.",
+      output: "We do. We see a lot of them actually. What size is yours? That'll help me give you an accurate quote.",
     },
   },
   {
@@ -116,10 +116,10 @@ CHANNEL RULES:CLIENT EMAILS:
 - Never start an email with "Hope this email finds you well" or any variant.
 
 EXAMPLE: what NOT to write vs. what to write:
-✗ "Subject: Your Pup's Big Day is Coming! 🎉 — Hi there! We're SO excited to see you and your fur baby this Thursday!"
-✓ "Subject: Thursday at 2pm — Hi Sarah — confirmed for Thursday. I'll text when I'm 15 minutes out. Have a parking spot clear near the door if you can."
+✗ "Subject: Your Pup's Big Day is Coming! 🎉 Hi there! We're SO excited to see you and your fur baby this Thursday!"
+✓ "Subject: Thursday at 2pm. Hi Sarah, confirmed for Thursday. I'll text when I'm 15 minutes out. Have a parking spot clear near the door if you can."
 
-SIGN-OFF: "— Dana" for Dana's emails. "— The Ruff Cuts Team" for operational emails. Never just "Ruff Cuts" with no human attached.`,
+SIGN-OFF: "- Dana" for Dana's emails. "- The Ruff Cuts Team" for operational emails. Never just "Ruff Cuts" with no human attached.`,
     example: {
       ask: "Appointment confirmation email",
       output: "Hi Sarah,\n\nYou're confirmed for Thursday, March 14 at 2pm. We'll have the van at your place for about an hour.\n\nJust make sure we can get to a parking spot near your door, and have Max ready to go.\n\nSee you then.",
@@ -150,7 +150,7 @@ EXAMPLE: what NOT to write vs. what to write:
 SIGN-OFF: None. Texts don't need signatures. They come from a known number.`,
     example: {
       ask: "Running 15 minutes late",
-      output: "Hey — running about 15 behind today. Apologies. Be there by 2:15.",
+      output: "Hey, running about 15 behind today. Apologies. Be there by 2:15.",
     },
   },
   {
@@ -175,10 +175,10 @@ EXAMPLE: what NOT to write vs. what to write:
 ✗ "Is your fur baby ready for summer?! 🌞🐾 Here are 5 AMAZING tips to keep your pup looking pawsitively adorable all season long!"
 ✓ "It's about to hit 100° in Austin. If your dog has a double coat, here's one thing worth knowing before summer: don't shave it. A proper de-shed does more for heat than a buzz cut ever will."
 
-SIGN-OFF: "— Dana and the Ruff Cuts crew" for longer posts. No signature on short posts or comments.`,
+SIGN-OFF: "- Dana and the Ruff Cuts crew" for longer posts. No signature on short posts or comments.`,
     example: {
       ask: "Post about summer grooming for double-coated breeds",
-      output: "If your dog has a double coat — huskies, goldens, shepherds — summer is when it matters most. That undercoat traps heat if it's not properly maintained. We see a lot of well-meaning owners shave it off, but that can actually make things worse. A proper de-shed and blow-out does the job without compromising the coat. Worth knowing before it hits 100° next month.",
+      output: "If your dog has a double coat (huskies, goldens, shepherds), summer is when it matters most. That undercoat traps heat if it's not properly maintained. We see a lot of well-meaning owners shave it off, but that can actually make things worse. A proper de-shed and blow-out does the job without compromising the coat. Worth knowing before it hits 100° next month.",
     },
   },
   {
@@ -190,7 +190,7 @@ SIGN-OFF: "— Dana and the Ruff Cuts crew" for longer posts. No signature on sh
 ${VOICE_DNA}
 
 CHANNEL RULES:GOOGLE REVIEW RESPONSES:
-- Positive reviews: brief, genuine, personal. Use their name and their dog's name. "Thanks, Sarah — Max was great. See you next time." Don't over-thank or grovel.
+- Positive reviews: brief, genuine, personal. Use their name and their dog's name. "Thanks, Sarah. Max was great. See you next time." Don't over-thank or grovel.
 - Negative reviews: warmer than normal, never defensive. Acknowledge the experience, take it offline. "That's not the experience we want for anyone. I'd like to make this right. Can you reach out to us directly?"
 - Never argue publicly. Never explain away a bad experience. Never blame the dog or the client.
 - Keep responses to 2-3 sentences max. Long responses to reviews look defensive.
@@ -198,12 +198,12 @@ CHANNEL RULES:GOOGLE REVIEW RESPONSES:
 
 EXAMPLE: what NOT to write vs. what to write:
 ✗ "Thank you SO much for your kind words!! 🐾💕 We absolutely LOVE what we do and it shows!! Can't wait to see you again!!"
-✓ "Thanks, Sarah — Max was easy to work with. See you in six weeks."
+✓ "Thanks, Sarah. Max was easy to work with. See you in six weeks."
 
-SIGN-OFF: "— Dana" on personal responses. "— The Ruff Cuts Team" if Dana didn't handle the groom. Never "Ruff Cuts Management" or "The Owner."`,
+SIGN-OFF: "- Dana" on personal responses. "- The Ruff Cuts Team" if Dana didn't handle the groom. Never "Ruff Cuts Management" or "The Owner."`,
     example: {
       ask: "Respond to a 5-star review that says 'Amazing service, my dog loved it!'",
-      output: "Appreciate that — glad your dog had a good time. That's always the goal. See you next round.",
+      output: "Appreciate that. Glad your dog had a good time. That's always the goal. See you next round.",
     },
   },
   {
@@ -230,7 +230,7 @@ EXAMPLE: what NOT to write vs. what to write:
 SIGN-OFF: No signatures on website copy. The site speaks as the brand.`,
     example: {
       ask: "Homepage hero headline and subheadline",
-      output: "Professional grooming at your door.\nAustin's mobile grooming service — 15 years of experience, no car ride required.",
+      output: "Professional grooming at your door.\nAustin's mobile grooming service. 15 years of experience, no car ride required.",
     },
   },
   {
@@ -253,12 +253,12 @@ CHANNEL RULES:HARD CONVERSATIONS:
 
 EXAMPLE: what NOT to write vs. what to write:
 ✗ "Oh no!! 💔 We're SO sorry to hear that! We would NEVER want your fur baby to have a bad experience! Please don't hesitate to reach out so we can make this right!!"
-✓ "I'm sorry about that — that's not the standard we hold ourselves to. I've talked to the groomer. I'd like to cover your next groom and the vet visit if you want one. Here's my number if you'd rather talk by phone."
+✓ "I'm sorry about that. That's not the standard we hold ourselves to. I've talked to the groomer. I'd like to cover your next groom and the vet visit if you want one. Here's my number if you'd rather talk by phone."
 
-SIGN-OFF: Always "— Dana". Hard conversations come from the founder, not "the team." If another groomer needs to send it, Dana reviews it first.`,
+SIGN-OFF: Always "- Dana". Hard conversations come from the founder, not "the team." If another groomer needs to send it, Dana reviews it first.`,
     example: {
       ask: "Client says their dog came back with a small nick on the ear",
-      output: "I'm really sorry about that. That's not acceptable, full stop. I've talked to the groomer and we've gone over what happened. I'd like to cover your next groom on us — and if you want to have your vet take a look at the ear, we'll cover that too. How does that sound?",
+      output: "I'm really sorry about that. That's not acceptable, full stop. I've talked to the groomer and we've gone over what happened. I'd like to cover your next groom on us, and if you want to have your vet take a look at the ear, we'll cover that too. How does that sound?",
     },
   },
 ] as const;
@@ -477,7 +477,7 @@ function EmailMockup({ example }: { example: Channel["example"] }) {
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between">
-            <span className="text-sm font-semibold text-rc-bark">Dana — Ruff Cuts</span>
+            <span className="text-sm font-semibold text-rc-bark">Dana, Ruff Cuts</span>
             <span className="text-[10px] text-rc-warm/40">2:14 PM</span>
           </div>
           <p className="text-[11px] text-rc-warm/50">dana@ruffcuts.com</p>
@@ -642,7 +642,7 @@ function HardConvoMockup({ example }: { example: Channel["example"] }) {
       {/* Body */}
       <div className="px-4 py-4">
         <p className="text-sm text-rc-bark/80 leading-relaxed">{example.output}</p>
-        <p className="text-sm text-rc-bark/80 mt-3">— Dana</p>
+        <p className="text-sm text-rc-bark/80 mt-3">- Dana</p>
       </div>
     </div>
   );
@@ -687,9 +687,9 @@ export default function BrainSection({ printMode }: { printMode?: boolean }) {
         {/* Shared voice rules — shown once */}
         <div className="space-y-4">
           <h3 className="font-display text-xl text-rc-bark">Shared voice rules</h3>
-          <p className="text-xs text-rc-warm/50">These rules are injected into every channel prompt. They appear once here instead of repeating in each section below.</p>
+          <p className="text-sm text-rc-warm/70">These rules are injected into every channel prompt. They appear once here instead of repeating in each section below.</p>
           <div className="bg-white rounded-2xl border border-rc-fog overflow-hidden">
-            <pre className="px-5 py-4 text-xs text-rc-bark/70 leading-relaxed whitespace-pre-wrap font-body overflow-x-auto">
+            <pre className="px-5 py-4 text-sm text-rc-bark/90 leading-relaxed whitespace-pre-wrap font-body overflow-x-auto">
               {VOICE_DNA}
             </pre>
           </div>
@@ -707,19 +707,19 @@ export default function BrainSection({ printMode }: { printMode?: boolean }) {
               </div>
 
               <div className="bg-white rounded-2xl border border-rc-fog overflow-hidden">
-                <pre className="px-5 py-4 text-xs text-rc-bark/70 leading-relaxed whitespace-pre-wrap font-body overflow-x-auto">
+                <pre className="px-5 py-4 text-sm text-rc-bark/90 leading-relaxed whitespace-pre-wrap font-body overflow-x-auto">
                   {channelSpecific}
                 </pre>
               </div>
 
               <div className="bg-rc-fog/20 rounded-2xl border border-rc-fog overflow-hidden">
                 <div className="px-5 py-3 border-b border-rc-fog/50">
-                  <p className="text-[10px] uppercase tracking-wider text-rc-warm/40 mb-1">Example prompt</p>
-                  <p className="text-sm text-rc-bark/70 italic">{ch.example.ask}</p>
+                  <p className="text-xs uppercase tracking-wider text-rc-warm/50 mb-1">Example prompt</p>
+                  <p className="text-base text-rc-bark/90 italic">{ch.example.ask}</p>
                 </div>
                 <div className="px-5 py-3">
-                  <p className="text-[10px] uppercase tracking-wider text-rc-sage mb-1">Example output</p>
-                  <p className="text-sm text-rc-bark/80 leading-relaxed whitespace-pre-line">{ch.example.output}</p>
+                  <p className="text-xs uppercase tracking-wider text-rc-sage mb-1">Example output</p>
+                  <p className="text-base text-rc-bark leading-relaxed whitespace-pre-line">{ch.example.output}</p>
                 </div>
               </div>
             </div>
@@ -764,7 +764,7 @@ export default function BrainSection({ printMode }: { printMode?: boolean }) {
             {copied ? "✓ Copied!" : "Copy prompt"}
           </button>
         </div>
-        <pre className="px-5 py-4 text-xs text-rc-bark/70 leading-relaxed whitespace-pre-wrap font-body overflow-x-auto max-h-96">
+        <pre className="px-5 py-4 text-base text-rc-bark/90 leading-relaxed whitespace-pre-wrap font-body overflow-x-auto max-h-96">
           {channel.prompt}
         </pre>
       </div>

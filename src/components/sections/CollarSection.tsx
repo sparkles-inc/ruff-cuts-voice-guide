@@ -41,7 +41,7 @@ export default function CollarSection({ printMode }: { printMode?: boolean }) {
   return (
     <div className="space-y-14">
       {/* Who you're talking to */}
-      <p className="text-sm text-rc-bark/80 leading-relaxed">
+      <p className="text-lg text-rc-bark leading-relaxed">
         Our clients are dual-income professionals who have money but no time. They want to trust a groomer and never think about it again. That&apos;s who we&apos;re talking to. Learn to speak their language.
       </p>
 
@@ -50,7 +50,7 @@ export default function CollarSection({ printMode }: { printMode?: boolean }) {
         {VALUES.map(({ value, explain }, i) => (
           <div key={i} className="border-b border-rc-fog last:border-b-0 pb-6 last:pb-0">
             <p className="font-display text-xl sm:text-2xl text-rc-bark mb-2">{value}</p>
-            <p className="text-sm text-rc-warm/60 leading-relaxed">{explain}</p>
+            <p className="text-lg text-rc-warm/70 leading-relaxed">{explain}</p>
           </div>
         ))}
       </div>
@@ -58,7 +58,7 @@ export default function CollarSection({ printMode }: { printMode?: boolean }) {
       {/* We are / We are not */}
       <div className="grid grid-cols-2 gap-4">
         <div className={`flex flex-col items-center justify-center ${printMode ? "py-6" : "py-10"} bg-rc-sage/5 rounded-2xl border border-rc-sage/20`}>
-          <p className="text-[10px] uppercase tracking-[0.2em] text-rc-sage/60 font-semibold mb-4">We are</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-rc-sage/60 font-semibold mb-4">We are</p>
           {printMode ? (
             <ul className="space-y-1.5 text-center">
               {WE_ARE.map((word) => (
@@ -73,7 +73,7 @@ export default function CollarSection({ printMode }: { printMode?: boolean }) {
           )}
         </div>
         <div className={`flex flex-col items-center justify-center ${printMode ? "py-6" : "py-10"} bg-rc-reject/3 rounded-2xl border border-rc-reject/15`}>
-          <p className="text-[10px] uppercase tracking-[0.2em] text-rc-reject/50 font-semibold mb-4">We are not</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-rc-reject/70 font-semibold mb-4">We are not</p>
           {printMode ? (
             <ul className="space-y-1.5 text-center">
               {WE_ARE_NOT.map((word) => (

@@ -7,7 +7,7 @@ const SCENARIOS = [
     id: "stressed-dog",
     situation: "A client texts you at 7pm",
     message: "Hey, Duke seems really stressed since his groom today. He keeps hiding under the bed and won't eat dinner. Is that normal?",
-    context: "Duke is a regular — every 6 weeks for the past year. He's never had this reaction before. You groomed him today and everything seemed fine during the appointment.",
+    context: "Duke is a regular. Every 6 weeks for the past year. He's never had this reaction before. You groomed him today and everything seemed fine during the appointment.",
   },
   {
     id: "price-question",
@@ -80,7 +80,7 @@ export default function TailSection({ printMode }: { printMode?: boolean }) {
 
   return (
     <div className="space-y-10">
-      <p className="text-sm text-rc-bark/80 leading-relaxed">
+      <p className="text-lg text-rc-bark leading-relaxed">
         {printMode
           ? "Read each scenario and think about how you\u2019d respond. These are real situations you\u2019ll face."
           : "Write what you\u2019d actually say. The head of marketing will review your answers and give you real feedback."}
@@ -90,11 +90,11 @@ export default function TailSection({ printMode }: { printMode?: boolean }) {
         <div key={scenario.id} className="bg-white rounded-2xl border border-rc-fog overflow-hidden">
           {/* Scenario header */}
           <div className="px-5 pt-5 pb-3">
-            <p className="text-[10px] uppercase tracking-wider text-rc-warm/40 mb-3">{scenario.situation}</p>
+            <p className="text-xs uppercase tracking-wider text-rc-warm/50 mb-3">{scenario.situation}</p>
             <div className="bg-rc-fog/30 rounded-xl px-4 py-3 mb-3">
-              <p className="text-sm text-rc-bark/70 italic leading-relaxed">&ldquo;{scenario.message}&rdquo;</p>
+              <p className="text-lg text-rc-bark/90 italic leading-relaxed">&ldquo;{scenario.message}&rdquo;</p>
             </div>
-            <p className="text-xs text-rc-warm/40 leading-relaxed">{scenario.context}</p>
+            <p className="text-sm text-rc-warm/60 leading-relaxed">{scenario.context}</p>
           </div>
 
           {/* Response area — hidden in print mode */}
@@ -103,13 +103,13 @@ export default function TailSection({ printMode }: { printMode?: boolean }) {
               {submitted[scenario.id] ? (
                 <div>
                   <div className="bg-rc-sage/5 border border-rc-sage/15 rounded-xl px-4 py-3">
-                    <p className="text-sm text-rc-bark/80 leading-relaxed whitespace-pre-wrap">{responses[scenario.id]}</p>
+                    <p className="text-lg text-rc-bark leading-relaxed whitespace-pre-wrap">{responses[scenario.id]}</p>
                   </div>
                   <div className="flex items-center justify-between mt-3">
-                    <span className="text-[10px] text-rc-sage font-medium">Submitted for review</span>
+                    <span className="text-xs text-rc-sage font-medium">Submitted for review</span>
                     <button
                       onClick={() => handleEdit(scenario.id)}
-                      className="text-[10px] text-rc-warm/40 hover:text-rc-bark transition-colors"
+                      className="text-xs text-rc-warm/40 hover:text-rc-bark transition-colors"
                     >
                       Edit
                     </button>
@@ -126,7 +126,7 @@ export default function TailSection({ printMode }: { printMode?: boolean }) {
                     }}
                     placeholder="Write your response..."
                     rows={2}
-                    className="w-full text-sm text-rc-bark/80 placeholder-rc-warm/30 bg-transparent resize-none focus:outline-none leading-relaxed"
+                    className="w-full text-lg text-rc-bark placeholder-rc-warm/30 bg-transparent resize-none focus:outline-none leading-relaxed"
                   />
                   <div className="flex justify-end mt-2">
                     <button
@@ -148,8 +148,8 @@ export default function TailSection({ printMode }: { printMode?: boolean }) {
       {!printMode && allSubmitted && (
         <div className="bg-rc-cream border border-rc-gold/20 rounded-2xl p-6 text-center">
           <p className="font-display text-xl text-rc-bark mb-2">All responses submitted.</p>
-          <p className="text-sm text-rc-warm/50 leading-relaxed">
-            The business owner will review these personally and follow up with corrections or feedback. No AI grading — real eyes, real judgment.
+          <p className="text-lg text-rc-warm/70 leading-relaxed">
+            The business owner will review these personally and follow up with corrections or feedback. No AI grading. Real eyes, real judgment.
           </p>
         </div>
       )}

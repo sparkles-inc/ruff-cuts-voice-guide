@@ -123,7 +123,7 @@ export default function CopyGenerator() {
       {selectedType && (
         <div>
           <label className="text-xs text-rc-warm/50 mb-1.5 block">
-            Any specifics? (optional — dog name, situation, etc.)
+            Any specifics? (optional: dog name, situation, etc.)
           </label>
           <input
             type="text"

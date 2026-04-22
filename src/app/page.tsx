@@ -293,7 +293,7 @@ export default function Home() {
                 <div className="max-w-2xl w-full">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-xl">{section.icon}</span>
-                    <p className="text-xs tracking-[0.25em] uppercase text-rc-warm/40 font-medium">
+                    <p className="text-sm tracking-[0.25em] uppercase text-rc-warm/40 font-medium">
                       {section.title}
                     </p>
                   </div>

@@ -121,7 +121,7 @@ Three vans. Three groomers she trained herself. Every dog gets groomed in their 
 
 We're booked six weeks out because people don't leave. As we grow, we need every person on this team to sound like they belong here.
 
-> "We know we've done our job if the dogs are happy to see us. Whether that happens after 1 bath or 5, our goal is to make them feel safe and comfortable." — Dana
+> "We know we've done our job if the dogs are happy to see us. Whether that happens after 1 bath or 5, our goal is to make them feel safe and comfortable." - Dana
 
 ## Customers
 
@@ -366,7 +366,7 @@ What NOT to write vs. what to write:
 
 BAD: "Hi there! :paw_prints: Thanks SO much for reaching out! We'd absolutely LOVE to groom your pup! Let me get some details!"
 
-GOOD: "Hey — yeah, we groom labs. What part of Austin are you in? I can check our availability for your area."`,
+GOOD: "Hey, yeah, we groom labs. What part of Austin are you in? I can check our availability for your area."`,
   },
 
   // ═══════════════════════════════════════
@@ -423,13 +423,13 @@ If any answer is wrong, rewrite before sending. Shorter and more specific always
 
 What NOT to write vs. what to write:
 
-BAD: "Subject: Your Pup's Big Day is Coming! :tada: — Hi there! We're SO excited to see you and your fur baby this Thursday!"
+BAD: "Subject: Your Pup's Big Day is Coming! :tada: Hi there! We're SO excited to see you and your fur baby this Thursday!"
 
-GOOD: "Subject: Thursday at 2pm — Hi Sarah — confirmed for Thursday. I'll text when I'm 15 minutes out. Have a parking spot clear near the door if you can."
+GOOD: "Subject: Thursday at 2pm. Hi Sarah, confirmed for Thursday. I'll text when I'm 15 minutes out. Have a parking spot clear near the door if you can."
 
 ## Sign-off
 
-"— Dana" for Dana's emails. "— The Ruff Cuts Team" for operational emails. Never just "Ruff Cuts" with no human attached.`,
+"- Dana" for Dana's emails. "- The Ruff Cuts Team" for operational emails. Never just "Ruff Cuts" with no human attached.`,
   },
 
   // ═══════════════════════════════════════
@@ -557,7 +557,7 @@ GOOD: "It's about to hit 100 degrees in Austin. If your dog has a double coat, h
 
 ## Sign-off
 
-"— Dana and the Ruff Cuts crew" for longer posts. No signature on short posts or comments.`,
+"- Dana and the Ruff Cuts crew" for longer posts. No signature on short posts or comments.`,
   },
 
   // ═══════════════════════════════════════
@@ -602,7 +602,7 @@ If any answer is wrong, rewrite before sending. Shorter and more specific always
 
 ## Channel Rules:Google Review Responses
 
-- Positive reviews: brief, genuine, personal. Use their name and their dog's name. "Thanks, Sarah — Max was great. See you next time." Don't over-thank or grovel.
+- Positive reviews: brief, genuine, personal. Use their name and their dog's name. "Thanks, Sarah. Max was great. See you next time." Don't over-thank or grovel.
 - Negative reviews: warmer than normal, never defensive. Acknowledge the experience, take it offline. "That's not the experience we want for anyone. I'd like to make this right. Can you reach out to us directly?"
 - Never argue publicly. Never explain away a bad experience. Never blame the dog or the client.
 - Keep responses to 2-3 sentences max. Long responses to reviews look defensive.
@@ -614,11 +614,11 @@ What NOT to write vs. what to write:
 
 BAD: "Thank you SO much for your kind words!! :paw_prints::two_hearts: We absolutely LOVE what we do and it shows!! Can't wait to see you again!!"
 
-GOOD: "Thanks, Sarah — Max was easy to work with. See you in six weeks."
+GOOD: "Thanks, Sarah. Max was easy to work with. See you in six weeks."
 
 ## Sign-off
 
-"— Dana" on personal responses. "— The Ruff Cuts Team" if Dana didn't handle the groom. Never "Ruff Cuts Management" or "The Owner."`,
+"- Dana" on personal responses. "- The Ruff Cuts Team" if Dana didn't handle the groom. Never "Ruff Cuts Management" or "The Owner."`,
   },
 
   // ═══════════════════════════════════════
@@ -741,11 +741,11 @@ What NOT to write vs. what to write:
 
 BAD: "Oh no!! :broken_heart: We're SO sorry to hear that! We would NEVER want your fur baby to have a bad experience! Please don't hesitate to reach out so we can make this right!!"
 
-GOOD: "I'm sorry about that — that's not the standard we hold ourselves to. I've talked to the groomer. I'd like to cover your next groom and the vet visit if you want one. Here's my number if you'd rather talk by phone."
+GOOD: "I'm sorry about that. That's not the standard we hold ourselves to. I've talked to the groomer. I'd like to cover your next groom and the vet visit if you want one. Here's my number if you'd rather talk by phone."
 
 ## Sign-off
 
-Always "— Dana". Hard conversations come from the founder, not "the team." If another groomer needs to send it, Dana reviews it first.`,
+Always "- Dana". Hard conversations come from the founder, not "the team." If another groomer needs to send it, Dana reviews it first.`,
   },
 
   // ═══════════════════════════════════════
@@ -774,7 +774,7 @@ Give them a concrete next step. Don't ask them what they want. Tell them what yo
 "I just noticed Duke has a cut on his ear from today's groom. There's a little blood on his bed. I'm really upset about this."
 
 **Step 1: Make a safe space:**
-"Oh no — I'm so sorry. Tell me everything. Where exactly is the cut? Is it still bleeding or has it slowed down?"
+"Oh no. I'm so sorry. Tell me everything. Where exactly is the cut? Is it still bleeding or has it slowed down?"
 
 **They continue:**
 "It's on the tip of his left ear. It's not gushing but it's definitely still oozing a little. He keeps shaking his head."
@@ -801,7 +801,7 @@ She didn't defend or minimize. She asked for details first so the client could g
 "Showed up late, groomer seemed rushed, and my dog was anxious when I got him back. Won't be returning. 2 stars."
 
 ## Our response:
-"Sarah, I'm sorry to hear you had a less than stellar experience. I'd love to learn more about what happened exactly. Can I take you out to lunch and get to the bottom of it? Please contact us directly at 512-555-0142. — Dana"
+"Sarah, I'm sorry to hear you had a less than stellar experience. I'd love to learn more about what happened exactly. Can I take you out to lunch and get to the bottom of it? Please contact us directly at 512-555-0142.\n\nDana"
 
 ## Why this works
 
@@ -828,7 +828,7 @@ Nobody expects a lunch invite from a grooming company. That's the point. It says
 "Hey, we need to cancel our recurring appointment. Things have just gotten tight right now."
 
 ## Our response:
-"Totally understand — we'll get that cancelled for you. Before you go, would you be open to sharing any feedback on the service? We're always trying to get better, and hearing from clients who've been with us is the most useful thing. Either way, thanks for trusting us with Max. Door's always open."
+"Totally understand. We'll get that cancelled for you. Before you go, would you be open to sharing any feedback on the service? We're always trying to get better, and hearing from clients who've been with us is the most useful thing. Either way, thanks for trusting us with Max. Door's always open."
 
 ## Why this works
 
@@ -852,7 +852,7 @@ Don't guilt them. Don't beg. Cancel it immediately so they know you respect thei
 
 ## Our message (proactive, sent before anyone asks):
 
-"Hi Sarah — quick heads up. Starting March 1, our rates are going up by $10.
+"Hi Sarah, quick heads up. Starting March 1, our rates are going up by $10.
 
 Here's why: we've upgraded our products to all-natural, hypoallergenic lines. We've invested in better equipment in every van. And we're paying our groomers what they're worth so the best people stick around.
 
