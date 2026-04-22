@@ -115,6 +115,12 @@ html {
     word-wrap: break-word !important;
   }
 
+  /* Keep footer on one page */
+  footer {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
   /* Hide the mode toggle */
   .absolute.top-6.right-6 {
     display: none !important;
