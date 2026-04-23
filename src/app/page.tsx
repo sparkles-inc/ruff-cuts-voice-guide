@@ -95,7 +95,7 @@ export default function Home() {
 
         <div className="relative z-10 flex flex-col items-center w-full max-w-4xl">
           {/* Title above dog */}
-          <div className="text-center mb-8 mt-8">
+          <div className="text-center mb-8 mt-16 sm:mt-8">
             <p className="text-sm sm:text-base tracking-[0.35em] uppercase text-rc-warm font-semibold mb-4">
               Ruff Cuts
             </p>
