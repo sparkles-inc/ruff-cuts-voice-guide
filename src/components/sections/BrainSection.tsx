@@ -283,43 +283,44 @@ She feels safe with us, which means we've done our job.
 Dogs are people too :-)`;
 
   return (
-    <div className="flex items-center gap-5 justify-center">
-      {/* Left arrow with SCROLL inside */}
-      {/* Left arrow */}
-      <motion.button
-        onClick={() => setSlide(Math.max(0, slide - 1))}
-        animate={slide > 0 ? { x: [0, -4, 0] } : {}}
-        transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-        className={`w-14 h-14 rounded-full bg-rc-bark/10 border border-rc-bark/20 text-rc-bark flex items-center justify-center hover:bg-rc-bark/20 transition-colors flex-shrink-0 ${
-          slide === 0 ? "opacity-0 pointer-events-none" : ""
-        }`}
-      >
-        <span className="text-base font-bold leading-none">‹</span>
-      </motion.button>
-
-      {/* SCROLL — vertical, next to phone */}
-      <div className="flex flex-col items-center gap-1 font-bold text-4xl uppercase leading-none flex-shrink-0">
-        {"SCROLL".split("").map((letter, i) => (
-          <motion.span
-            key={i}
-            animate={{ opacity: [0.05, 0.15, 0.05] }}
-            transition={{ duration: 2.5, repeat: Infinity, delay: i * 0.15, ease: "easeInOut" }}
-            className="text-rc-bark"
-          >
-            {letter}
-          </motion.span>
-        ))}
-        <motion.span
-          animate={{ opacity: [0.05, 0.15, 0.05], y: [0, 4, 0] }}
-          transition={{ duration: 2.5, repeat: Infinity, delay: 6 * 0.15, ease: "easeInOut" }}
-          className="text-rc-bark mt-1"
+    <div className="flex flex-col items-center gap-4">
+      {/* Phone + desktop side controls */}
+      <div className="flex items-center gap-5 justify-center w-full">
+        {/* Left arrow */}
+        <motion.button
+          onClick={() => setSlide(Math.max(0, slide - 1))}
+          animate={slide > 0 ? { x: [0, -4, 0] } : {}}
+          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+          className={`hidden sm:flex w-14 h-14 rounded-full bg-rc-bark/10 border border-rc-bark/20 text-rc-bark items-center justify-center hover:bg-rc-bark/20 transition-colors flex-shrink-0 ${
+            slide === 0 ? "opacity-0 pointer-events-none" : ""
+          }`}
         >
-          ↓
-        </motion.span>
-      </div>
+          <span className="text-base font-bold leading-none">‹</span>
+        </motion.button>
 
-      {/* Single phone with scrollable content */}
-      <div className="bg-white rounded-2xl border border-rc-fog overflow-hidden w-72 sm:w-80 shadow-sm">
+        {/* SCROLL text — desktop only */}
+        <div className="hidden sm:flex flex-col items-center gap-1 font-bold text-4xl uppercase leading-none flex-shrink-0">
+          {"SCROLL".split("").map((letter, i) => (
+            <motion.span
+              key={i}
+              animate={{ opacity: [0.05, 0.15, 0.05] }}
+              transition={{ duration: 2.5, repeat: Infinity, delay: i * 0.15, ease: "easeInOut" }}
+              className="text-rc-bark"
+            >
+              {letter}
+            </motion.span>
+          ))}
+          <motion.span
+            animate={{ opacity: [0.05, 0.15, 0.05], y: [0, 4, 0] }}
+            transition={{ duration: 2.5, repeat: Infinity, delay: 6 * 0.15, ease: "easeInOut" }}
+            className="text-rc-bark mt-1"
+          >
+            ↓
+          </motion.span>
+        </div>
+
+        {/* Single phone with scrollable content */}
+        <div className="bg-white rounded-2xl border border-rc-fog overflow-hidden w-full max-w-80 shadow-sm">
         <div className="overflow-y-auto" style={{ maxHeight: "600px" }}>
           {/* IG header */}
           <div className="flex items-center gap-2 px-2.5 py-2 sticky top-0 bg-white z-10">
@@ -373,49 +374,80 @@ Dogs are people too :-)`;
         </div>
       </div>
 
-      {/* Right arrow + carousel hint */}
-      <div className="flex flex-col items-center gap-2 flex-shrink-0 mx-4">
-        {/* Carousel hint — fades out after a few loops */}
-        <motion.div
-          animate={{ opacity: slide > 0 ? 0 : 1 }}
-          transition={{ duration: 0.5 }}
-          className="flex items-center gap-1"
-        >
-          <span className="text-[10px] font-semibold text-rc-warm/40 whitespace-nowrap">Carousel</span>
-          <motion.svg
-            width="60" height="20" viewBox="0 0 60 20"
-            className="text-rc-warm/30"
-            animate={{ x: [0, 3, 0] }}
-            transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
+        {/* Right arrow + carousel hint — desktop only */}
+        <div className="hidden sm:flex flex-col items-center gap-2 flex-shrink-0 mx-4">
+          <motion.div
+            animate={{ opacity: slide > 0 ? 0 : 1 }}
+            transition={{ duration: 0.5 }}
+            className="flex items-center gap-1"
           >
-            <path
-              d="M2 10 C10 4, 18 16, 26 10 C34 4, 42 16, 50 10"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              fill="none"
-              strokeLinecap="round"
-            />
-            <path
-              d="M46 6 L52 10 L46 14"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </motion.svg>
-        </motion.div>
+            <span className="text-[10px] font-semibold text-rc-warm/40 whitespace-nowrap">Carousel</span>
+            <motion.svg
+              width="60" height="20" viewBox="0 0 60 20"
+              className="text-rc-warm/30"
+              animate={{ x: [0, 3, 0] }}
+              transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <path
+                d="M2 10 C10 4, 18 16, 26 10 C34 4, 42 16, 50 10"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                fill="none"
+                strokeLinecap="round"
+              />
+              <path
+                d="M46 6 L52 10 L46 14"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </motion.svg>
+          </motion.div>
 
-        <motion.button
-          onClick={() => setSlide(Math.min(IG_SLIDES.length - 1, slide + 1))}
-          animate={slide < IG_SLIDES.length - 1 ? { x: [0, 4, 0] } : {}}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          className={`w-14 h-14 rounded-full bg-rc-bark/10 border border-rc-bark/20 text-rc-bark flex items-center justify-center hover:bg-rc-bark/20 transition-colors ${
-            slide === IG_SLIDES.length - 1 ? "opacity-0 pointer-events-none" : ""
+          <motion.button
+            onClick={() => setSlide(Math.min(IG_SLIDES.length - 1, slide + 1))}
+            animate={slide < IG_SLIDES.length - 1 ? { x: [0, 4, 0] } : {}}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+            className={`w-14 h-14 rounded-full bg-rc-bark/10 border border-rc-bark/20 text-rc-bark flex items-center justify-center hover:bg-rc-bark/20 transition-colors ${
+              slide === IG_SLIDES.length - 1 ? "opacity-0 pointer-events-none" : ""
+            }`}
+          >
+            <span className="text-base font-bold leading-none">›</span>
+          </motion.button>
+        </div>
+      </div>
+
+      {/* Mobile carousel dots + arrows */}
+      <div className="flex sm:hidden items-center gap-4">
+        <button
+          onClick={() => setSlide(Math.max(0, slide - 1))}
+          className={`w-10 h-10 rounded-full bg-rc-bark/10 border border-rc-bark/20 text-rc-bark flex items-center justify-center ${
+            slide === 0 ? "opacity-30 pointer-events-none" : ""
           }`}
         >
-          <span className="text-base font-bold leading-none">›</span>
-        </motion.button>
+          <span className="text-sm font-bold">‹</span>
+        </button>
+        <div className="flex gap-1.5">
+          {IG_SLIDES.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setSlide(i)}
+              className={`w-2 h-2 rounded-full transition-colors ${
+                i === slide ? "bg-rc-bark" : "bg-rc-bark/20"
+              }`}
+            />
+          ))}
+        </div>
+        <button
+          onClick={() => setSlide(Math.min(IG_SLIDES.length - 1, slide + 1))}
+          className={`w-10 h-10 rounded-full bg-rc-bark/10 border border-rc-bark/20 text-rc-bark flex items-center justify-center ${
+            slide === IG_SLIDES.length - 1 ? "opacity-30 pointer-events-none" : ""
+          }`}
+        >
+          <span className="text-sm font-bold">›</span>
+        </button>
       </div>
     </div>
   );

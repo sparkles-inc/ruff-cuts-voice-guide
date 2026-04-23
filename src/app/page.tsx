@@ -189,8 +189,35 @@ export default function Home() {
               })}
             </div>
           ) : (
-            /* Interactive mode — dog with hover labels */
-            <div className="relative w-full max-w-lg mx-auto" style={{ aspectRatio: "470/580" }}>
+            /* Interactive mode — dog with hover labels (desktop) / simple list (mobile) */
+            <>
+            {/* Mobile: dog image + button list */}
+            <div className="sm:hidden flex flex-col items-center w-full">
+              <div className="relative w-48 mx-auto" style={{ aspectRatio: "470/580" }}>
+                <Image
+                  src="/dog-full.png"
+                  alt="Ruff Cuts dog"
+                  fill
+                  priority
+                  className="object-contain"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-2 w-full max-w-xs mt-6">
+                {SECTIONS.map((section) => (
+                  <button
+                    key={section.key}
+                    onClick={() => scrollTo(section.key)}
+                    className="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-white/80 border border-rc-fog hover:border-rc-gold/40 transition-colors text-left"
+                  >
+                    <span className="text-base">{section.icon}</span>
+                    <span className="text-xs font-semibold text-rc-bark/70">{section.title}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Desktop: dog with annotation lines + hover labels */}
+            <div className="hidden sm:block relative w-full max-w-lg mx-auto" style={{ aspectRatio: "470/580" }}>
               <Image
                 src="/dog-full.png"
                 alt="Ruff Cuts dog"
@@ -258,6 +285,7 @@ export default function Home() {
                 );
               })}
             </div>
+            </>
           )}
 
           {/* Scroll hint — hidden in print */}
